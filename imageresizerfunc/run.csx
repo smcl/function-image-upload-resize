@@ -15,6 +15,7 @@ static string thumbContainerName = System.Environment.GetEnvironmentVariable("my
 public static async Task Run(EventGridEvent myEvent, Stream inputBlob, TraceWriter log)
 {
     log.Info(myEvent.ToString());
+    log.Info("random change so I can check if Azure Function is listening to my Git repo, or not ...");
 
     // Instructions to resize the blob image.
     var instructions = new Instructions
